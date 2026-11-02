@@ -238,3 +238,193 @@ a:hover { text-decoration: underline; }
     grid-template-columns: 1fr;
   }
 }
+
+
+/* =========================================
+   MOBILE RESPONSIVE LAYOUT
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  /* Overall page */
+
+  .site-container {
+    width: 100%;
+    padding: 18px 16px;
+  }
+
+  /* Header becomes two rows */
+
+  .site-header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-rows: auto auto;
+    align-items: center;
+    gap: 20px 12px;
+    margin-bottom: 30px;
+  }
+
+  /* Profile occupies first row */
+
+  .profile {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+  }
+
+  .avatar {
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+  }
+
+  .profile-info {
+    min-width: 0;
+  }
+
+  .profile-info h2 {
+    font-size: 17px;
+    line-height: 1.3;
+  }
+
+  .profile-info p {
+    font-size: 12px;
+    line-height: 1.4;
+    overflow-wrap: normal;
+  }
+
+  /* Theme button on first row */
+
+  #theme-toggle {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+    width: 36px;
+    height: 36px;
+    font-size: 22px;
+  }
+
+  /* Navigation on second row */
+
+  .navbar {
+    grid-column: 1 / -1;
+    grid-row: 2;
+
+    width: 100%;
+    min-width: 0;
+
+    display: flex;
+    justify-content: flex-start;
+    gap: 24px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+
+    padding-bottom: 5px;
+  }
+
+  .navbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .navbar a {
+    flex-shrink: 0;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  /* Main content */
+
+  .content {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px 0 45px;
+  }
+
+  .content h1 {
+    font-size: 27px;
+  }
+
+  .content h2 {
+    font-size: 21px;
+  }
+
+  .content p {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  /* Home introduction becomes one column */
+
+  .intro-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 30px;
+  }
+
+  .intro-text {
+    min-width: 0;
+  }
+
+  .content .intro-heading {
+    font-size: clamp(29px, 7vw, 38px);
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+  }
+
+  .content .intro-description p {
+    font-size: 15px;
+  }
+
+  /* Homepage image gallery */
+
+  .intro-gallery {
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .intro-photo img {
+    width: 100%;
+    height: 230px;
+    object-fit: contain;
+  }
+
+  /* Contact section */
+
+  .contact-section {
+    margin-top: 50px;
+    padding-top: 30px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .social-buttons {
+    flex-wrap: wrap;
+  }
+
+  /* Research screenshot */
+
+  .research-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Travel journal */
+
+  .journal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .travel-journal {
+    margin-top: 50px;
+  }
+}
