@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Travel | Astraeus Tong</title>
+
+  <link rel="icon" type="image/png" href="assets/muecat.jpg">
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    const saved = localStorage.getItem("theme");
+    const dark = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+
+    document.documentElement.dataset.theme =
+      saved || (dark ? "dark" : "light");
+  </script>
+</head>
+
+<body>
+<div class="site-container">
+
+  <header class="site-header">
+
+    <div class="profile">
+      <img src="assets/profile.jpg"
+           alt="Profile photo"
+           class="avatar">
+
+      <div class="profile-info">
+        <h2>Astraeus Tong</h2>
+        <p>Data Science & Machine Learning</p>
+        <p>National University of Singapore</p>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="projects.html">Projects</a>
+      <a href="experience.html">Experience</a>
+      <a href="travel.html" class="active">Travel</a>
+    </nav>
+
+    <button id="theme-toggle"
+            aria-label="Toggle theme">☾</button>
+
+  </header>
+
+  <main class="content travel-page">
+
+    <h1>Travel</h1>
+
+    <p class="travel-intro">
+      Exploring the world • 探索世界 • Selamat Pagi • Ohayo • Bonjour • Xin Chào • 여보!
+
+    
+<section class="travel-regions">
+
+  <h2>Places I've Been</h2>
+
+  <p class="travel-subtitle">
+    A collection of places I've explored.
+  </p>
+
+
+<div class="visited-list">
+
+  <span class="visited-tag">
+    <img src="https://flagcdn.com/w40/au.png" alt="">
+    Australia
+  </span>
+
+  <span class="visited-tag">
+    <img src="https://flagcdn.com/w40/bh.png" alt="">
+    Bahrain
+  </span>
+
+  <span class="visited-tag">
+    <img src="https://flagcdn.com/w40/cn.png" alt="">
+    China (Mainland, Hong Kong, Macau, Taiwan)
+  </span>
+
+  <span class="visited-tag">
+    <img src="https://flagcdn.com/w40/eg.png" alt="">
+    Egypt
+  </span>
+
+  <span class="visited-tag">
+    <img src="https://flagcdn.com/w40/in.png" alt="">
+    India
+  </span> 
+
+  <span class="visited-tag">
+    <img src="https://flagcdn.com/w40/id.png" alt="">
+    Indonesia
+  </span>
+
+  <span class="visited-tag">
+    <img src="https://flagcdn.com/w40/jp.png" alt="">
+    Japan
+  </span>
+
+  <span class="visited-tag">
+    <img src="https://flagcdn.com/w40/my.png" alt="">
+    Malaysia
+  </span>
+
+  <span class="visited-tag">
+    <img src="https://flagcdn.com/w40/ph.png" alt="">
+    Philippines
+  </span>
+
+  <span class="visited-tag">
+    <img src="https://flagcdn.com/w40/sg.png" alt="">
+    Singapore
+  </span>
+
+  <span class="visited-tag">
+    <img src="https://flagcdn.com/w40/th.png" alt="">
+    Thailand
+  </span>
+
+  <span class="visited-tag">
+    <img src="https://flagcdn.com/w40/us.png" alt="">
+    U.S.A
+  </span>
+
+  <span class="visited-tag">
+    <img src="https://flagcdn.com/w40/ae.png" alt="">
+    U.A.E
+  </span>
+
+  <span class="visited-tag">
+    <img src="https://flagcdn.com/w40/vn.png" alt="">
+    Vietnam
+  </span>
+
+</div>
+
+
+
+</section>
+
+
+    <section class="travel-journal">
+      <div class="travel-section-heading">
+        <h2>Travel Journal</h2>
+        <span>Notes & reflections</span>
+      </div>
+
+      <div class="journal-grid">
+        <article class="journal-card">
+          <div class="journal-placeholder">
+            <span>✈</span>
+            <p class="journal-category">COMING SOON</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js"></script>
+
+
+</body>
+</html>

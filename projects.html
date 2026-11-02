@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>Projects | Astraeus Tong</title>
+  <link rel="icon" type="image/png" href="assets/muecat.jpg">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    const saved = localStorage.getItem("theme");
+    const dark = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+    document.documentElement.dataset.theme =
+      saved || (dark ? "dark" : "light");
+  </script>
+</head>
+
+<body>
+  <div class="site-container">
+
+    <header class="site-header">
+
+      <!-- Top-left profile -->
+      <div class="profile">
+        <img src="assets/profile.jpg"
+             alt="Profile photo"
+             class="avatar">
+
+        <div class="profile-info">
+          <h2>Astraeus Tong</h2>
+          <p>Data Science & Machine Learning</p>
+          <p>National University of Singapore</p>
+        </div>
+      </div>
+
+      <!-- Top-centre navigation -->
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="experience.html">Experience</a>
+        <a href="travel.html">Travel</a>
+      </nav>
+
+      <!-- Top-right theme button -->
+      <button id="theme-toggle"
+              aria-label="Toggle theme">
+        ☾
+      </button>
+
+    </header>
+
+    
+
+
+<main class="content">
+  <h1>Projects</h1>
+
+  <article class="entry">
+    <h2>Singapore COE Data Analysis</h2>
+    <p class="entry-meta">
+      Python · Data Analysis · Statistics
+    </p>
+    <p>
+      An empirical analysis of Singapore's
+      Certificate of Entitlement bidding data.
+    </p>
+  </article>
+
+<h2>TO BE UPDATED ☕</h2>
+</main>
+
+
+
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

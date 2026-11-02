@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>Experience | Astraeus Tong</title>
+  <link rel="icon" type="image/png" href="assets/muecat.jpg">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    const saved = localStorage.getItem("theme");
+    const dark = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+    document.documentElement.dataset.theme =
+      saved || (dark ? "dark" : "light");
+  </script>
+</head>
+
+<body>
+  <div class="site-container">
+
+    <header class="site-header">
+
+      <!-- Top-left profile -->
+      <div class="profile">
+        <img src="assets/profile.jpg"
+             alt="Profile photo"
+             class="avatar">
+
+        <div class="profile-info">
+          <h2>Astraeus Tong</h2>
+          <p>Data Science & Machine Learning</p>
+          <p>National University of Singapore</p>
+        </div>
+      </div>
+
+      <!-- Top-centre navigation -->
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="experience.html" class = 'active'>Experience</a>
+        <a href="travel.html">Travel</a>
+      </nav>
+
+      <!-- Top-right theme button -->
+      <button id="theme-toggle"
+              aria-label="Toggle theme">
+        ☾
+      </button>
+
+    </header>
+
+    
+<main class="content">
+  <h1>Experience</h1>
+
+  <article class="entry">
+    <h2>Professional Experience</h2>
+    <p class="entry-meta">
+      Internship at Ipsos, 2025
+    </p>
+    <p>
+      Coffee, Data Analystics, and Market Research consulting.
+    </p>
+  </article>
+
+    
+<h2>TO BE UPDATED ☕</h2>
+  
+</main>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
